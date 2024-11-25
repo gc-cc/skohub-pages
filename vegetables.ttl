@@ -1,0 +1,52 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix w3i: <https://w3id.org/>.
+
+w3i:
+    a skos:ConceptScheme;
+    dct:description "My wonderful vegetable vocabulary."@en;
+    dct:title "Guy's Test"@en;
+    skos:hasTopConcept w3i:5c334, w3i:7a1f8, w3i:934b3, w3i:e169e, w3i:f2079 .
+w3i:1399e
+    a skos:Concept;
+    skos:broader w3i:7a1f8;
+    skos:inScheme w3i:;
+    skos:prefLabel "Field peas"@en.
+w3i:5c334
+    a skos:Concept;
+    skos:prefLabel "Carrots"@en, "Karotten"@de;
+    skos:topConceptOf w3i: .
+w3i:7a1f8
+    a skos:Concept;
+    skos:narrower w3i:1399e, w3i:d6ef6;
+    skos:prefLabel "Erbsen"@de, "Peas"@en;
+    skos:topConceptOf w3i: .
+w3i:7b31e
+    a skos:Concept;
+    skos:broader w3i:f2079;
+    skos:inScheme w3i:;
+    skos:prefLabel "Kidney beans"@en.
+w3i:8b9b5
+    a skos:Concept;
+    skos:broader w3i:f2079;
+    skos:inScheme w3i:;
+    skos:prefLabel "Lima beans"@en, "Limabohnen"@de.
+w3i:934b3
+a skos:Concept; skos:prefLabel "Lettuce"@en, "Salat"@de; skos:topConceptOf w3i: .
+w3i:d33e0
+    a skos:Concept;
+    skos:broader w3i:f2079;
+    skos:inScheme w3i:;
+    skos:prefLabel "Black beans"@en, "schwarze Bohnen"@de.
+w3i:d6ef6
+    a skos:Concept;
+    skos:broader w3i:7a1f8;
+    skos:inScheme w3i:;
+    skos:prefLabel "Green peas"@en.
+w3i:e169e
+a skos:Concept; skos:prefLabel "Lauch"@de, "Leek"@en; skos:topConceptOf w3i: .
+w3i:f2079
+    a skos:Concept;
+    skos:narrower w3i:7b31e, w3i:8b9b5, w3i:d33e0;
+    skos:prefLabel "Beans"@en, "Bohnen"@de;
+    skos:topConceptOf w3i: .
