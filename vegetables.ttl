@@ -1,11 +1,13 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix w3i: <https://w3id.org/>.
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 w3i:
     a skos:ConceptScheme;
     dct:description "My wonderful vegetable vocabulary."@en;
     dct:title "Guy's Test"@en;
+    vann:preferredNamespaceUri w3i: ;
     skos:hasTopConcept w3i:5c334, w3i:7a1f8, w3i:934b3, w3i:e169e, w3i:f2079 .
 w3i:1399e
     a skos:Concept;
